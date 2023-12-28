@@ -1,0 +1,11 @@
+<h3>
+  <a href="https://airtable.com/tblCxXgAZjnxjlyBP/viw3Z1kqRKZwazDV8" target="_blank">Bugs & Issues</a>
+</h3>
+<markdown [src]="'assets/bugs-code.md'"></markdown>
+
+<markdown [src]="'assets/bugs-template.md'"></markdown>
+<ul>
+  <ng-container *ngFor="let bug of bugs">
+    <li>{{bug.fields.Name}}</li>
+  </ng-container>
+</ul>
